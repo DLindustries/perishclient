@@ -1,24 +1,21 @@
 <div align="center">
   
-# Raven XD
+# Perish client
 <p align="center">
-    <img src="https://img.shields.io/github/issues/xia-mc/Raven-bS?style=flat" alt="issues">
+    <img src="https://img.shields.io/github/issues/20laid/perishclient?style=flat" alt="issues">
     <img src="https://img.shields.io/badge/license-GPLV3-green" alt="License">
-    <img src="https://tokei.rs/b1/github/xia-mc/Raven-XD?category=code&style=flat" alt="Lines of code">
+    <img src="https://tokei.rs/b1/github/20laid/perishclient?category=code&style=flat" alt="Lines of code">
 </p>
 
-[![Github Release Downloads](https://img.shields.io/github/downloads/xia-mc/Raven-bS/total?label=Github%20Release%20Downloads&style=flat-square)](https://github.com/xia-mc/Raven-bS/releases)
-<!--
-[![CurseForge Downloads](http://cf.way2muchnoise.eu/997222.svg?badge_style=flat)](https://www.curseforge.com/minecraft/mc-mods/cheatdetector)
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/QNVaUzHT?label=Modrinth%20Downloads&logo=Modrinth%20Downloads&style=flat-square)](https://modrinth.com/mod/cheatdetector)
--->
+[![Github Release Downloads](https://img.shields.io/github/downloads/20laid/perishclient/total?label=Github%20Release%20Downloads&style=flat-square)](https://github.com/20laid/perishclient/releases)
 
-Raven B4, but for those who can't afford it.
 
-Raven B4, but not only for Hypixel.
+raven b4 + vape v4 intergrated and improved, but for those who can't afford it.
+
+Hypixel mastered client. Win any 1v1s - except for blatant hackers- with appropriate game IQ
 
 <a href="https://dsc.gg/ravenxd"><img src="https://invidget.switchblade.xyz/zSgDKArSH4" alt="https://dsc.gg/ravenxd"/></a><br>
-[QQ Group (645021103)](https://qm.qq.com/q/vv0xPdfc6A)
+[youtube](youtube.com/@quoly)
 
 ![2024-08-13_10 14 36](https://github.com/user-attachments/assets/36e8920e-336e-4b62-ae3f-6b9962920812)
 ![Screenshot 2024-08-13 084510](https://github.com/user-attachments/assets/85637f18-9d6b-47d9-9dc2-cb8594aff585)
@@ -29,7 +26,7 @@ Raven B4, but not only for Hypixel.
 ### Steps:
 
 1. **Download the latest .jar file from the releases**:
-   - Download from https://xia-mc/Raven-XD/releases
+   - Download from https://20laid/perishclient/releases
    - This client requires Forge 1.8.9.
 
 2. **Put in mods folder of your .minecraft directory**:
@@ -38,7 +35,7 @@ Raven B4, but not only for Hypixel.
    - After you're there, all you have to do is drag the file that you just downloaded there.
 
 3. **Launch Minecraft**:
-   - Once your on this step, you are pretty much done. When it's done loading, if you have done it properly, it should have a background with a train and the string "Raven XD" in big white letters.
+   - Once your on this step, you are pretty much done. When it's done loading, if you have done it properly, it should have a background with a train and the string "Perish Client" in big white letters.
    - For more help, join the discord server and ask in #public-support.
 
 ## How do I build this client?
@@ -61,8 +58,8 @@ Raven B4, but not only for Hypixel.
 4. **Clone the Repository**:
    - Run the following commands in the terminal or command prompt:
      ```bash
-     git clone --recursive https://github.com/xia-mc/Raven-XD.git
-     cd Raven-XD
+     git clone --recursive https://github.com/20laid/perishclient.git
+     cd perishclient
      ```
 
 5. **Set Up the Project**:
@@ -82,12 +79,11 @@ Feel free to raise an issue or submit a pull request.
 
 If you want to co-develop this project with me, please contact me.
 
-You can also support us on [Patreon](https://www.patreon.com/xia__mc)!
+You can also support us on [Youtube](https://www.youtube.com/@Quoly)!
 
 <div align="center">
 
-[!![-preview](https://github.com/user-attachments/assets/ac50e6e5-3227-4ee9-9881-2e7b8ba47861)](https://www.patreon.com/xia__mc)
-
+[!![-preview](https://github.com/user-attachments/assets/94d9321d-fc39-4f99-9f0e-593fe977b920)](https://www.youtube.com/@Quoly)
 <img src="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/IntelliJ IDEA.png" alt="Java" width="500" />
 
 </div>

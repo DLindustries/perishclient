@@ -14,7 +14,7 @@ body:
     description: "Please select all that apply."
     options:
       - label: "I have searched existing issues and didn't find any previous reports of this bug."
-      - label: "This bug still happens in the latest version of Raven XD. I've made sure my installation is up to date."
+      - label: "This bug still happens in the latest version of perish client. I've made sure my installation is up to date."
       - label: "I have tried removing all other mods and the bug still happens."
 - type: textarea
   id: description
@@ -35,10 +35,10 @@ body:
   validations:
     required: true
 - type: input
-  id: raven-version
+  id: perish client-version
   attributes:
-    label: Raven XD version
-    placeholder: e.g. 1.14
+    label: perish client version
+    placeholder: e.g. V1
   validations:
     required: true
 - type: textarea
@@ -56,4 +56,4 @@ body:
   attributes:
     value: |
       ## Thank you!
-      We appreciate your help in improving Raven XD Client by reporting this bug. Please make sure you have filled out all the necessary information before submitting this issue.
+      We appreciate your help in improving Perish Client by reporting this bug. Please make sure you have filled out all the necessary information before submitting this issue.

@@ -45,7 +45,7 @@ public class AutoUpdate {
 
         switch (result.getType()) {
             case FAIL:
-                Utils.sendMessage(ChatFormatting.RED + "Fail to check latest version.");
+                Utils.sendMessage(ChatFormatting.RED + "Fail to check latest version. Are you connected to the internet?");
                 return;
             case LATEST:
                 Utils.sendMessage(ChatFormatting.GREEN + "You are at latest version! " + result.getLatestVersion());
@@ -62,7 +62,7 @@ public class AutoUpdate {
             CloseableHttpResponse response = httpClient.execute(httpGet);
 
             InputStream input = response.getEntity().getContent();
-            File file = new File(Raven.mc.mcDataDir + File.separator + "mods", "Raven-XD.jar");
+            File file = new File(Raven.mc.mcDataDir + File.separator + "mods", "Perish-client.jar");
             file.createNewFile();
             FileOutputStream output = new FileOutputStream(file);
 
@@ -87,7 +87,7 @@ public class AutoUpdate {
     @Contract(" -> new")
     private static @NotNull Result checkVersion() {
         try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
-            HttpGet httpGet = new HttpGet("https://api.github.com/repos/xia-mc/Raven-XD/releases/latest");
+            HttpGet httpGet = new HttpGet("https://api.github.com/repos/20laid/perishclient/releases/latest");
             CloseableHttpResponse response = httpClient.execute(httpGet);
 
             if (response.getStatusLine().getStatusCode() != 200) {
