@@ -14,7 +14,7 @@ raven b4 + vape v4 intergrated and improved, but for those who can't afford it.
 
 Hypixel mastered client. Win any 1v1s - except for blatant hackers- with appropriate game IQ
 
-<a href="https://dsc.gg/ravenxd"><img src="https://invidget.switchblade.xyz/zSgDKArSH4" alt="https://dsc.gg/ravenxd"/></a><br>
+<a href="https://discord.gg/yynpznJVkC"><img src="https://invidget.switchblade.xyz/yynpznJVkC" alt="https://discord.gg/yynpznJVkC"/></a><br>
 [youtube](youtube.com/@quoly)
 
 ![2024-08-13_10 14 36](https://github.com/user-attachments/assets/36e8920e-336e-4b62-ae3f-6b9962920812)
