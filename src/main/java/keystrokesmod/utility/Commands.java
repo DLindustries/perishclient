@@ -136,7 +136,7 @@ public class Commands {
                 }
 
                 if (URLUtils.k.isEmpty()) {
-                    print("&cAPI Key is empty!", 1);
+                    print("Cannot detect enemy api", 1);
                     print("Use \"setkey [api_key)\".", 0);
                     return;
                 }

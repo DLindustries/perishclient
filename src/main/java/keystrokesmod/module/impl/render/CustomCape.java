@@ -23,9 +23,11 @@ import static com.mojang.realmsclient.gui.ChatFormatting.*;
 public final class CustomCape extends Module {
     private static File directory;
     public static String[] CAPES_NAME = new String[]{
-            "RavenAnime", "RavenAqua", "RavenGreen", "RavenPurple", "RavenRed", "RavenWhite", "RavenYellow",
-            "Cherry", "Die",
-            "Astolfo"
+            "die",
+            "suou yuki",
+            "developer",
+            "akane",
+            "girl"
     };
     public static final List<ResourceLocation> LOADED_CAPES = new ArrayList<>();
     public static final ModeSetting cape = new ModeSetting("Cape", CAPES_NAME, 0);
@@ -64,13 +66,13 @@ public final class CustomCape extends Module {
             Utils.sendMessage(RED + "Fail to load.");
             return;
         }
-
         final String[] builtinCapes = new String[]{
-                "RavenAnime", "RavenAqua", "RavenGreen", "RavenPurple", "RavenRed", "RavenWhite", "RavenYellow",
-                "Cherry", "Die",
-                "Astolfo"
-        };
-        CAPES_NAME = new String[files.length + builtinCapes.length];
+                "die",
+                "developer",
+                "suou yuki",
+                "akane",
+                "girl"
+        };        CAPES_NAME = new String[files.length + builtinCapes.length];
         LOADED_CAPES.clear();
         System.arraycopy(builtinCapes, 0, CAPES_NAME, 0, builtinCapes.length);
 

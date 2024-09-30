@@ -62,7 +62,7 @@ public class AutoUpdate {
             CloseableHttpResponse response = httpClient.execute(httpGet);
 
             InputStream input = response.getEntity().getContent();
-            File file = new File(Raven.mc.mcDataDir + File.separator + "mods", "Perish-client.jar");
+            File file = new File(Raven.mc.mcDataDir + File.separator + "mods", "Perish client.jar");
             file.createNewFile();
             FileOutputStream output = new FileOutputStream(file);
 

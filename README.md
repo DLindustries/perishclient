@@ -17,8 +17,9 @@ Hypixel mastered client. Win any 1v1s - except for blatant hackers- with appropr
 <a href="https://discord.gg/yynpznJVkC"><img src="https://invidget.switchblade.xyz/yynpznJVkC" alt="https://discord.gg/yynpznJVkC"/></a><br>
 [youtube](youtube.com/@quoly)
 
-![2024-08-13_10 14 36](https://github.com/user-attachments/assets/36e8920e-336e-4b62-ae3f-6b9962920812)
-![Screenshot 2024-08-13 084510](https://github.com/user-attachments/assets/85637f18-9d6b-47d9-9dc2-cb8594aff585)
+![2024-08-13_10 14 36](https://github.com/user-attachments/assets/38c968d5-dc7c-4beb-bb7a-4d090a8cd781)
+![Screenshot 2024-08-13 084510](https://github.com/user-attachments/assets/4bf9190c-3d28-4a90-ad9f-5adaccfb48ea)
+
 </div>
 
 ## How do I install this client?
