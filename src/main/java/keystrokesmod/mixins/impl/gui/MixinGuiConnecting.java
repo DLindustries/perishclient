@@ -32,7 +32,7 @@ public abstract class MixinGuiConnecting extends GuiScreen {
     }
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for NyaProxy module
      */
     @Overwrite

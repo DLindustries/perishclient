@@ -15,11 +15,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Skidded from Rise (com.alan.clients.module.impl.movement.jesus.WatchdogJesus)
+ * Skidded from Rise (com.alan.clients.module.impl.movement.jesus.WatchdogJesus) - thx rise
  * <p>
- * Counter-confused by xia__mc
  * @see hackclient.rise.lk
- * @author Alan34
+ * @author Alan 34
  */
 public class HypixelJesus extends SubMode<Jesus> {
     private Boolean tW = false;

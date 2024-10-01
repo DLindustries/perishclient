@@ -169,7 +169,7 @@ public abstract class MixinEntityLivingBase extends Entity {
     }
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for Animations module
      */
     @Inject(method = "getArmSwingAnimationEnd", at = @At("RETURN"), cancellable = true)

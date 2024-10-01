@@ -390,7 +390,7 @@ public abstract class MixinEntityPlayerSP extends AbstractClientPlayer {
     }
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for vulcan phase
      */
     @Inject(method = "pushOutOfBlocks", at = @At("HEAD"), cancellable = true)

@@ -63,7 +63,7 @@ public abstract class MixinMinecraft {
     }
 
     /**
-     * @author xia__mc
+     * @author duncan lai
      * @reason to fix reach and hitBox won't work with autoClicker
      */
     @Inject(method = "clickMouse", at = @At("HEAD"))
@@ -74,7 +74,7 @@ public abstract class MixinMinecraft {
     }
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason to fix freelook do impossible action
      */
     @Inject(method = "rightClickMouse", at = @At("HEAD"), cancellable = true)

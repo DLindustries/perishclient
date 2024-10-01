@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * @author xia__mc
+ * @author duncanlai
  * @see <a href="https://github.com/Nova-Committee/CheatDetector">CheatDetector Github</a>
  */
 public class Anticheat extends Module {

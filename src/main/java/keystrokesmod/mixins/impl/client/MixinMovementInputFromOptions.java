@@ -21,7 +21,7 @@ public abstract class MixinMovementInputFromOptions extends MovementInput {
     @Shadow @Final private GameSettings gameSettings;
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason to fix movement
      */
     @Inject(method = "updatePlayerMoveState", at = @At("HEAD"), cancellable = true)

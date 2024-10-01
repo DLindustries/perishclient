@@ -59,7 +59,7 @@ public abstract class MixinItemRenderer {
     private boolean raven_XD$lastIsSpoofItem = false;
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for Animations module.
      */
     @Inject(method = "renderItemInFirstPerson", at = @At("HEAD"), cancellable = true)
@@ -145,7 +145,7 @@ public abstract class MixinItemRenderer {
     }
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason fix crash issue with LabyMod.
      */
     @Overwrite

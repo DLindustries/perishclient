@@ -30,7 +30,7 @@ public abstract class MixinPlayerControllerMP {
     @Shadow @Final private NetHandlerPlayClient netClientHandler;
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for SlotHandler (silent switch)
      */
     @Inject(method = "syncCurrentPlayItem", at = @At("HEAD"), cancellable = true)

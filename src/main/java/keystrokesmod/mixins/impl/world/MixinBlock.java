@@ -23,7 +23,7 @@ public abstract class MixinBlock {
     @Shadow public abstract AxisAlignedBB getCollisionBoundingBox(World worldIn, BlockPos pos, IBlockState state);
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason for Hypixel Auto Phase (in module phase)
      *
      */

@@ -26,10 +26,10 @@ public class MixinEntityRenderer {
     @Shadow private Entity pointedEntity;
 
     /**
-     * @author xia__mc
+     * @author duncanlai
      * @reason fix silent rotation system
      * <p>
-     * I'm sorry I must overwrite this...
+     *rendering system for killaura
      */
     @Inject(method = "getMouseOver", at = @At("HEAD"), cancellable = true)
     public void getMouseOver(float p_getMouseOver_1_, CallbackInfo ci) {
