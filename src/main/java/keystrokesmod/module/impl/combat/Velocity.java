@@ -13,7 +13,7 @@ public class Velocity extends Module {
                 .add(new NormalVelocity("Normal", this))
                 .add(new HypixelVelocity("Hypixel", this))
                 .add(new IntaveVelocity("Intave", this))
-                .add(new LegitVelocity("Legit", this))
+                .add(new LegitVelocity("legit - jump reset", this))
                 .add(new KarhuVelocity("Karhu", this))
                 .add(new MatrixVelocity("Matrix", this))
                 .add(new GrimACVelocity("GrimAC", this))
