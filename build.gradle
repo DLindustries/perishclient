@@ -21,7 +21,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
-group = "keystrokesmod"
+group = "Perish client"
 archivesBaseName = "Perish client"
 //version = "Dev"
 

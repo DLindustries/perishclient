@@ -1,13 +1,13 @@
 [
 {
-  "modid": "keystrokes",
-  "name": "KeystrokesMod",
-  "description": "Shows your keystrokes ingame. | Updated and modified by spiderfrog | V5 by Yario & Extazz | Ported by OFP.",
-  "version": "KMV5",
-  "url": "https://www.youtube.com/ofpmedia",
+  "modid": "Perishclient",
+  "name": "Perishclient",
+  "description": "Boosts your minecraft FPS. | Updated and modified by Daduncs",
+  "version": "V3",
+  "url": "https://www.youtube.com/@Quoly",
   "updateUrl": "",
-  "authorList": ["OFP", "Fyu", "spiderfrog", "Yario & Extazz"],
-  "credits": "OFP, Fyu, spiderfrog, Yario & Extazz",
+  "authorList": ["Daduncs"],
+  "credits": "Duncan lai",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
