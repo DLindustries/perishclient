@@ -191,7 +191,7 @@ public class Utils {
 
     public static void sendMessage(String txt) {
         if (nullCheck()) {
-            String m = formatColor("&7[&dR&7]&r " + replace(txt));
+            String m = formatColor("&7[&dPerish client&7]&r " + replace(txt));
             mc.thePlayer.addChatMessage(new ChatComponentText(m));
         }
     }

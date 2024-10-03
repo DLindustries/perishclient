@@ -4,7 +4,6 @@ import keystrokesmod.Raven;
 import keystrokesmod.event.PostVelocityEvent;
 import keystrokesmod.module.impl.combat.Velocity;
 import keystrokesmod.module.setting.impl.ButtonSetting;
-import keystrokesmod.module.setting.impl.ModeSetting;
 import keystrokesmod.module.setting.impl.SliderSetting;
 import keystrokesmod.module.setting.impl.SubMode;
 import keystrokesmod.module.setting.utils.ModeOnly;
@@ -15,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LegitVelocity extends SubMode<Velocity> {
     private final ButtonSetting jumpInInv;
-    private final ModeSetting jumpResetMode;
+    private final ButtonSetting jumpResetEnabled;
     private final SliderSetting minDelay;
     private final SliderSetting maxDelay;
     private final SliderSetting chance;
@@ -25,10 +24,10 @@ public class LegitVelocity extends SubMode<Velocity> {
     public LegitVelocity(String name, Velocity parent) {
         super(name, parent);
         this.registerSetting(jumpInInv = new ButtonSetting("Jump in inv", false));
-        this.registerSetting(jumpResetMode = new ModeSetting("Jump reset mode", new String[]{"Jump Reset"}, 0));
-        this.registerSetting(minDelay = new SliderSetting("Min delay", 0, 0, 150, 1, "ms", new ModeOnly(jumpResetMode, 0)));
-        this.registerSetting(maxDelay = new SliderSetting("Max delay", 0, 0, 150, 1, "ms", new ModeOnly(jumpResetMode, 0)));
-        this.registerSetting(chance = new SliderSetting("Chance", 80, 0, 100, 1, "%", new ModeOnly(jumpResetMode, 0)));
+        this.registerSetting(jumpResetEnabled = new ButtonSetting("Jump Reset Enabled", true));
+        this.registerSetting(minDelay = new SliderSetting("Min delay", 0, 0, 150, 1, "ms", jumpResetEnabled::isToggled));
+        this.registerSetting(maxDelay = new SliderSetting("Max delay", 0, 0, 150, 1, "ms", jumpResetEnabled::isToggled));
+        this.registerSetting(chance = new SliderSetting("Chance", 80, 0, 100, 1, "%", jumpResetEnabled::isToggled));
         this.registerSetting(targetNearbyCheck = new ButtonSetting("Target nearby check", false));
         this.registerSetting(ignoreLiquid = new ButtonSetting("Ignore liquid", true));
     }
@@ -48,27 +47,29 @@ public class LegitVelocity extends SubMode<Velocity> {
             if (targetNearbyCheck.isToggled() && !Utils.isTargetNearby())
                 return;
 
-            if (Math.random() * 100 >= chance.getInput()) {
-                // Chance is met, apply delay
-                long delay = (long) (Math.random() * (maxDelay.getInput() - minDelay.getInput()) + minDelay.getInput());
-                if (maxDelay.getInput() == 0 || delay == 0) {
-                    if (canJump())
-                        mc.thePlayer.jump();
-                } else {
-                    Raven.getExecutor().schedule(() -> {
-                        if (canJump())
-                            mc.thePlayer.jump();
-                    }, delay, TimeUnit.MILLISECONDS);
-                }
-            } else {
-                // Chance is not met, do not apply delay
-                if (canJump())
+            // Always try to jump when taking knockback
+            if (canJump()) {
+                if (Math.random() * 100 < chance.getInput()) {
+                    // Successful jump reset, jump immediately
                     mc.thePlayer.jump();
+                    Utils.sendMessage("jump reset sucessfully");
+                } else {
+                    // Failed jump reset, jump with delay
+                    long delay = (long) (Math.random() * (maxDelay.getInput() - minDelay.getInput()) + minDelay.getInput());
+                    Raven.getExecutor().schedule(this::performDelayedJump, delay, TimeUnit.MILLISECONDS);
+                    Utils.sendMessage("jump reset failed");
+                }
             }
         }
     }
 
     private boolean canJump() {
         return mc.thePlayer.onGround && (jumpInInv.isToggled() || mc.currentScreen == null);
+    }
+
+    private void performDelayedJump() {
+        if (canJump()) {
+            mc.thePlayer.jump();
+        }
     }
 }
