@@ -1,3 +1,10 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
+
 name: Java CI with Gradle
 
 on:
@@ -13,10 +20,12 @@ on:
       - '**.json'
       - 'gradle**'
       - 'build.gradle'
+  # Makes it possible to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
   contents: write
+
 
 jobs:
   build:
@@ -35,27 +44,16 @@ jobs:
           distribution: 'temurin'
           java-version: '8'
           cache: 'gradle'
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      # This step replicates your IntelliJ Gradle configuration to build the project
       - name: Execute Gradle build
-        run: ./gradlew build --stacktrace --no-daemon  # Equivalent to IntelliJ's `build` task
+        run: ./gradlew build --stacktrace
 
-      # Optionally, add custom JVM or Gradle options if needed (from the IntelliJ configuration)
-      # Uncomment and modify the lines below if you need specific JVM options
-      # - name: Execute Gradle build with custom JVM options
-      #   run: ./gradlew build --stacktrace --no-daemon
-      #   env:
-      #     GRADLE_OPTS: '-Xmx2G -Xms1G'  # Add custom JVM options here if needed
-
-      # Optional: Add a step to send the build result to a Discord Webhook if configured
       - name: Send JAR to Discord Webhook
-        if: success()  # Only run this if the build succeeds
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           GITHUB_SHA: ${{ github.sha }}
