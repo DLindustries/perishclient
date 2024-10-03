@@ -19,6 +19,7 @@ public class NormalAutoClicker extends SubMode<IAutoClicker> {
     private final CoolDown clickStopWatch = new CoolDown(0);
     private int ticksDown;
     private long nextSwing;
+    private long clickStartTime; // added for 3-second timer
 
     public NormalAutoClicker(String name, @NotNull IAutoClicker parent, boolean left, boolean always) {
         super(name, parent);
@@ -45,8 +46,14 @@ public class NormalAutoClicker extends SubMode<IAutoClicker> {
 
             if (Mouse.isButtonDown(0) || always) {
                 ticksDown++;
+                if (clickStartTime == 0) {
+                    clickStartTime = System.currentTimeMillis(); // start timer when left click is held
+                } else if (System.currentTimeMillis() - clickStartTime > 3000) {
+                    Utils.sendMessage("You are clicking for too long!"); // send message if held for more than 3 seconds
+                }
             } else {
                 ticksDown = 0;
+                clickStartTime = 0; // reset timer when left click is released
             }
 
             if (this.nextSwing >= 50 * 2 && butterFly.isToggled()) {
