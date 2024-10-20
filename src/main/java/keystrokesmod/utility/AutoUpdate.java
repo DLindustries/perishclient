@@ -87,7 +87,7 @@ public class AutoUpdate {
     @Contract(" -> new")
     private static @NotNull Result checkVersion() {
         try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
-            HttpGet httpGet = new HttpGet("https://api.github.com/repos/20laid/perishclient/releases/latest");
+            HttpGet httpGet = new HttpGet("https://api.github.com/repos/DLindustries/perishclient/releases/latest");
             CloseableHttpResponse response = httpClient.execute(httpGet);
 
             if (response.getStatusLine().getStatusCode() != 200) {

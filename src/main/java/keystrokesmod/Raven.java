@@ -29,9 +29,9 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(
-        modid = "keystrokes",
-        name = "KeystrokesMod",
-        version = "KMV5",
+        modid = "skibidi theme",
+        name = "skibidi theme Mod",
+        version = "skibidi theme",
         acceptedMinecraftVersions = "[1.8.9]"
 )
 public class Raven {
@@ -93,7 +93,7 @@ public class Raven {
             try {
                 if (Utils.nullCheck()) {
                     if (Reflection.sendMessage) {
-                        Utils.sendMessage("&cThere was an error, relaunch the game.");
+                        Utils.sendMessage("&cThere was an error, relaunch perish client.");
                         Reflection.sendMessage = false;
                     }
                     for (Module module : getModuleManager().getModules()) {

@@ -35,10 +35,10 @@ public class AutoClicker extends IAutoClicker {
     public AutoClicker() {
         super("AutoClicker", category.combat);
         this.registerSetting(mode = new ModeValue("Mode", this)
-                .add(new NormalAutoClicker("Normal", this, true, false))
+                .add(new NormalAutoClicker("normal", this, true, false))
                 .add(new DragClickAutoClicker("Drag Click", this, true, false))
                 .add(new RecordAutoClicker("Record", this, true, false))
-                .setDefaultValue("Normal")
+                .setDefaultValue("normal")
         );
         this.registerSetting(breakBlocks = new ButtonSetting("Break blocks", true));
         this.registerSetting(jitter = new ButtonSetting("Jitter", false));

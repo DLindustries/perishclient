@@ -2,12 +2,12 @@
   
 # Perish client
 <p align="center">
-    <img src="https://img.shields.io/github/issues/20laid/perishclient?style=flat" alt="issues">
+    <img src="https://img.shields.io/github/issues/DLindustries/perishclient?style=flat" alt="issues">
     <img src="https://img.shields.io/badge/license-GPLV3-green" alt="License">
-    <img src="https://tokei.rs/b1/github/20laid/perishclient?category=code&style=flat" alt="Lines of code">
+    <img src="https://tokei.rs/b1/github/DLindustries/perishclient?category=code&style=flat" alt="Lines of code">
 </p>
 
-[![Github Release Downloads](https://img.shields.io/github/downloads/20laid/perishclient/total?label=Github%20Release%20Downloads&style=flat-square)](https://github.com/20laid/perishclient/releases)
+[![Github Release Downloads](https://img.shields.io/github/downloads/DLindustries/perishclient/total?label=Github%20Release%20Downloads&style=flat-square)](https://github.com/DLindustries/perishclient/releases)
 
 
 raven b4 + vape v4 intergrated and improved, but for those who can't afford it.
@@ -27,7 +27,7 @@ Hypixel mastered client. Win any 1v1s - except for blatant hackers- with appropr
 ### Steps:
 
 1. **Download the latest .jar file from the releases**:
-   - Download from https://20laid/perishclient/releases
+   - Download from https://github.com/DLindustries/perishclient/releases
    - This client requires Forge 1.8.9.
 
 2. **Put in mods folder of your .minecraft directory**:
@@ -59,7 +59,7 @@ Hypixel mastered client. Win any 1v1s - except for blatant hackers- with appropr
 4. **Clone the Repository**:
    - Run the following commands in the terminal or command prompt:
      ```bash
-     git clone --recursive https://github.com/20laid/perishclient.git
+     git clone --recursive https://github.com/DLindustries/perishclient.git
      cd perishclient
      ```
 
