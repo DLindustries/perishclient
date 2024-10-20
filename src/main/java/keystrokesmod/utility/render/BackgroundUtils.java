@@ -24,7 +24,6 @@ public class BackgroundUtils {
         // Update mountainx to create the scrolling effect
         mountainx = (mountainx - 1) % mountainWidth; // Decrement mountainx and wrap around to 0 when it reaches the end of the image
 
-        RenderUtils.drawBloomShadow(0, 0, width, height, 12, 6, BLOOM_COLOR, true);
-        RenderUtils.drawImage(new ResourceLocation("keystrokesmod:textures/backgrounds/ren.png"), 0, 0, width, height);
+
     }
 }
