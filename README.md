@@ -7,7 +7,7 @@
 [![Github Release Downloads](https://img.shields.io/github/downloads/DLindustries/perishclient/total?label=Github%20Release%20Downloads&style=flat-square)](https://github.com/20laid/perishclient/releases)
 
 
-![Screenshot 2024-08-13 084510](https://github.com/user-attachments/assets/4bf9190c-3d28-4a90-ad9f-5adaccfb48ea)
+![Screenshot 2024-08-13 084510]([https://github.com/user-attachments/assets/38c968d5-dc7c-4beb-bb7a-4d090a8cd781)))
 
 
 [website](perishclient.codedesign.app) |
